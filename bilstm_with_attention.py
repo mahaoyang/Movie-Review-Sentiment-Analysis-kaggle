@@ -24,6 +24,7 @@ def attention_bilstm(input_dim, time_steps, lstm_units):
     model = Model(inputs=inputs, outputs=output)
     model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
     model.summary()
+    return model
 
 
 if __name__ == '__main__':
